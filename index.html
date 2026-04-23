@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Makes a High-Earning Developer? | Anushka Shaw</title>
+  <style>
+    body {
+      max-width: 680px;
+      margin: 60px auto;
+      padding: 0 24px;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      line-height: 1.8;
+      color: #242424;
+    }
+
+    h1 {
+      font-size: 38px;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      color: #6b6b6b;
+      margin-bottom: 32px;
+    }
+
+    .byline {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: #6b6b6b;
+      border-top: 1px solid #e6e6e6;
+      border-bottom: 1px solid #e6e6e6;
+      padding: 12px 0;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 26px;
+      margin-top: 48px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin-bottom: 24px;
+    }
+
+    img {
+      width: 100%;
+      margin: 24px 0 8px;
+      display: block;
+    }
+
+    .caption {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: #6b6b6b;
+      margin-bottom: 32px;
+    }
+
+    .footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #e6e6e6;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: #6b6b6b;
+    }
+
+    .footer a { color: #1a73e8; }
+  </style>
+</head>
+<body>
+
+  <h1>What Makes a High-Earning Developer?</h1>
+  <p class="subtitle">A data-based approach using Stack Overflow's 2025 Annual Developer Survey.</p>
+  <div class="byline">Anushka Shaw &nbsp;·&nbsp; 5 min read &nbsp;·&nbsp; 2025</div>
+
+  <p>Every year, Stack Overflow asks tens of thousands of developers how much they make. The answers — from 49,191 developers across 177 countries — tell a clear story about what drives a software developer's paycheck. I analyzed the 2025 survey using machine learning to find out what really separates high earners from low earners. Here is what I found.</p>
+
+  <h2>Part I: Does Experience Pay Off?</h2>
+
+  <p>Developers with 0 to 2 years of experience earn a median salary of $40,586. By 30 or more years of experience, that number nearly triples to $115,720. The steepest climb happens between 5 and 15 years. If you are in your first few years, the data says: hang in there.</p>
+
+  <img src="salary_by_experience.png" alt="Median developer salary by years of experience" />
+  <p class="caption">Figure 1: Median developer salary by years of professional experience.</p>
+
+  <h2>Part II: Does Your Degree Determine Your Salary?</h2>
+
+  <p>PhD and professional degree holders earn the most at $92,812. But developers who only completed primary school earn $85,022 — higher than those with associate degrees or some college. In software development, what you can do often matters more than what credential you hold. Self-taught developers who build strong portfolios can compete at the highest salary levels.</p>
+
+  <img src="salary_by_education.png" alt="Median developer salary by education level" />
+  <p class="caption">Figure 2: Median developer salary by education level.</p>
+
+  <h2>Part III: Is Remote Work Worth It?</h2>
+
+  <p>Remote developers earn a median of $97,476 compared to just $59,030 for fully in-person workers. That is a $38,446 annual difference. Hybrid arrangements fall somewhere in between, ranging from $78,616 to $83,357 depending on how much flexibility is offered. Every step toward more flexibility in the data correlates with higher pay.</p>
+
+  <img src="salary_by_remote.png" alt="Median developer salary by work arrangement" />
+  <p class="caption">Figure 3: Median developer salary by work arrangement.</p>
+
+  <h2>Part IV: Can a Machine Predict Your Salary?</h2>
+
+  <p>I trained a Random Forest model to predict whether a developer earns above or below the median salary of $82,709. The model achieved 62% accuracy — better than random guessing. Work experience and years of coding were the two strongest predictors. To test it, I ran a prediction for a 25 to 34 year old developer with a Bachelor's degree, 4 years of experience, and a fully remote job. The model predicted this developer would be a low earner with 78.4% confidence — consistent with the experience data, which shows that salaries accelerate significantly after 10 or more years.</p>
+
+  <img src="model_results.png" alt="Random Forest model results" />
+  <p class="caption">Figure 4: Confusion matrix and feature importance from the Random Forest model.</p>
+
+  <h2>Conclusion</h2>
+
+  <p>Experience is the single biggest driver of developer salary. Remote work comes with a real premium of nearly $38,500 per year. Education helps, but self-taught developers with strong experience can close the gap. The developers earning the most are not necessarily those with the fanciest degrees — they are the ones who kept coding.</p>
+
+  <p>So the real question remains: what are you doing to move up the experience curve?</p>
+
+  <div class="footer">
+    <p>To see the full code and analysis, see the link to my <a href="https://github.com/Anushka-Shaw">GitHub</a>. Data sourced from the <a href="https://survey.stackoverflow.co/">Stack Overflow Annual Developer Survey 2025</a>. Project completed as part of the Udacity Data Scientist Nanodegree.</p>
+  </div>
+
+</body>
+</html>
